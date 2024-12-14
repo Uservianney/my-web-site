@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire avec identifiants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Questionnaire - 10 Questions</h1>
+        <form id="questionnaire-form">
+            <!-- Informations personnelles -->
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Questions du questionnaire -->
+            <label for="q1">1. Quel est votre plat préféré ?</label>
+            <input type="text" id="q1" name="q1" required>
+
+            <label for="q2">2. Quelle est votre couleur préférée ?</label>
+            <input type="text" id="q2" name="q2" required>
+
+            <label for="q3">3. Aimez-vous les animaux ?</label>
+            <select id="q3" name="q3" required>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+
+            <label for="q4">4. Quel est votre genre de musique préféré ?</label>
+            <input type="text" id="q4" name="q4" required>
+
+            <label for="q5">5. Préférez-vous la plage ou la montagne ?</label>
+            <select id="q5" name="q5" required>
+                <option value="plage">Plage</option>
+                <option value="montagne">Montagne</option>
+            </select>
+
+            <label for="q6">6. Quel est votre film préféré ?</label>
+            <input type="text" id="q6" name="q6" required>
+
+            <label for="q7">7. Avez-vous des projets futurs que vous aimeriez partager ?</label>
+            <textarea id="q7" name="q7" required></textarea>
+
+            <label for="q8">8. Quel est votre sport préféré ?</label>
+            <input type="text" id="q8" name="q8" required>
+
+            <label for="q9">9. Quel est votre livre préféré ?</label>
+            <input type="text" id="q9" name="q9" required>
+
+            <label for="q10">10. Quelle est votre saison préférée ?</label>
+            <select id="q10" name="q10" required>
+                <option value="printemps">Printemps</option>
+                <option value="été">Été</option>
+                <option value="automne">Automne</option>
+                <option value="hiver">Hiver</option>
+            </select>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
